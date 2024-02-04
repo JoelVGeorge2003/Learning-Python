@@ -1,0 +1,9 @@
+lst=[]
+b=int(input('enter no of elements'))
+for i in range(0,b):
+    no=int(input('enter number'))
+    lst.append(no)
+a=lst[len(lst)-1]
+lst[len(lst)-1]=lst[0]
+lst[0]=a
+print(lst)
