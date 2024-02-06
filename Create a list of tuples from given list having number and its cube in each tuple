@@ -1,0 +1,12 @@
+m=int(input("enter number of inputs: "))
+main_list=[]
+temp_list=[]
+for i in range(0,m):
+    n = int(input("enter number: "))
+    temp_list.append(n)
+    b=n**3
+    temp_list.append(b)
+    temp_tuple=tuple(temp_list)
+    main_list.append(temp_tuple)
+    temp_list=[]
+print(main_list)
