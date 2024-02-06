@@ -1,0 +1,10 @@
+n=int(input("enter no of inputs: "))
+lst=[]
+a=0
+for i in range(0,n):
+    l=int(input("enter list number: "))
+    lst.append(l)
+    a=a+l
+t=tuple(lst)
+print('tuple: ',t)
+print('sum: ',a)
