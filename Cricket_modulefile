@@ -1,0 +1,30 @@
+def Batting(runs,balls,fours,sixes,score=0):
+    score+=int(runs/2)
+    score+=fours*1
+    score+=sixes*2
+    if runs>=50:
+        score+=5
+    elif runs>=100:
+        score+=10
+    if 80>=(runs/balls)<=100:
+        score+=2
+    elif (runs/balls)>100:
+        score+=4
+    return score
+def Bowling(wkts,runs,over,score=0):
+    score+=wkts*10
+    if wkts==3 or wkts==4:
+        score+=5
+    elif wkts>=5:
+        score+=10
+    if 3.5<=(runs/over)<=4.5:
+        score+=4
+    elif 2<=(runs/over)<=3.5:
+        score+=7
+    elif (runs/over)<2:
+        score+=10
+    return score
+
+def Fielding(field,score=0):
+    score+=field*10
+    return score
